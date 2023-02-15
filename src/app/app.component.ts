@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Jarvis';
+
+  
+  //State
+  todos: string[] = [];
+  todoText: string = '';
+
+  //Events
+  addTodo() {
+    this.todos.push(this.todoText)
+    localStorage.setItem('todos', JSON.stringify(this.todos));
+  }
 }
