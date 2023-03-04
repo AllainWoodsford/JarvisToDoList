@@ -1,0 +1,34 @@
+<div class="my-container">
+   <mat-card>
+      <mat-card-header>
+         <h2>Registration</h2>
+      </mat-card-header>
+       <mat-card-content>
+           
+         <!-- CONTENT HERE -->
+         <form class="my-form">
+           <!--FORM FIELDS HERE-->
+           <mat-form-field class="full-width">
+               <mat-label>Username</mat-label>
+               <input  matInput  placeholder="Username"  name="username"  required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+               <mat-label>Email</mat-label>
+               <input  matInput  placeholder="Email" name="email">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+               <mat-label>Password</mat-label>
+               <input  matInput  placeholder="Password"  name="password" required>
+            </mat-form-field>
+         </form>  
+       </mat-card-content>
+       <mat-card-actions>
+         <!-- REGISTER BUTTON -->
+         <button mat-raised-button (click)="register()" color="primary">REGISTER</button>
+       </mat-card-actions>
+       <mat-card-footer class="card-footer">
+         <mat-label>Already have an account? <a routerLink="/login" >log in</a></mat-label>
+       </mat-card-footer>
+    </mat-card>
+</div>
+ 

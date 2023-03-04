@@ -1,0 +1,32 @@
+.my-form {
+    min-width: 150px;
+   
+    width:100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.my-container {
+    width:50%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.card-footer {
+    margin:  1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .my-container {
+        width: 75%;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .my-container {
+        width: 100%;
+    }
+  }
